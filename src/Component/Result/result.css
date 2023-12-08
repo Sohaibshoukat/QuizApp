@@ -1,0 +1,253 @@
+.MainSection{
+    background-color: #1848a0;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.InnerBody{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.ScoreBoard{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    font-size: 4rem;
+    font-weight: 700;
+    padding: 50px 100px;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 16px 32px 0px rgba(0, 30, 60, 0.12);
+    font-family: 'Source Sans 3', sans-serif !important
+}
+
+.ScoreBoard h1{
+    line-height: 6rem;
+}
+
+.LowerSec{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.LowerSec h2{
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.LowerSec p{
+    width: 80%;
+    margin: auto;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.btnGroup{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.BtnLearnMore{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif !important;
+    font-size: 1.2rem;
+    padding: 10px 40px;
+    border: 1px solid rgba(0,0,0,0);
+    box-shadow: 0 2px 0 rgba(0,0,0,.015);
+    transition: 0.5s ease-in-out;
+}
+
+.BtnLearnMore:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: 0.5s ease-in-out;
+}
+
+.BtnReatake{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif !important;
+    font-size: 1.2rem;
+    padding: 10px 40px;
+    border: 1px solid rgba(0,0,0,0);
+    box-shadow: 0 2px 0 rgba(0,0,0,.015);
+    transition: 0.5s ease-in-out;
+}
+
+.BtnReatake:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+@media screen and (max-width:1100px) {
+    .InnerBody{
+        width: 80%;
+    }
+    .LowerSec p{
+        width: 80%;
+        font-size: 1.3rem;
+    }
+}
+
+
+@media screen and (max-width:700px) {
+    .InnerBody{
+        width: 95%;
+    }
+
+    .LowerSec h2{
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    .LowerSec p{
+        width: 85%;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    
+    .ScoreBoard{
+        width: fit-content;
+        margin: auto;
+        gap:20px;
+        font-size: 2.5rem;
+        font-weight: 700;
+        padding: 50px 100px;
+        margin-bottom: 30px;
+    }
+    
+    .ScoreBoard h1{
+        line-height: 5rem;
+    }
+    
+    .LowerSec{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    
+    .btnGroup{
+        width: fit-content;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .BtnLearnMore{
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        border-radius: 10px;
+        font-weight: 700;
+        font-family: 'Raleway', sans-serif !important;
+        font-size: 1.2rem;
+        padding: 10px 40px;
+        border: 1px solid rgba(0,0,0,0);
+        box-shadow: 0 2px 0 rgba(0,0,0,.015);
+        transition: 0.5s ease-in-out;
+    }
+    
+    .BtnLearnMore:hover{
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        transition: 0.5s ease-in-out;
+    }
+    
+    .BtnReatake{
+        width: 100%;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        border-radius: 10px;
+        font-weight: 700;
+        font-family: 'Raleway', sans-serif !important;
+        font-size: 1.2rem;
+        padding: 10px 40px;
+        border: 1px solid rgba(0,0,0,0);
+        box-shadow: 0 2px 0 rgba(0,0,0,.015);
+        transition: 0.5s ease-in-out;
+    }
+    
+    .BtnReatake:hover{
+        background-color: black;
+        color: white;
+        transition: 0.5s ease-in-out;
+    }
+    
+}
+
+@media screen and (max-width:300px) {
+    
+    .InnerBody{
+        width: 95%;
+    }
+
+    .LowerSec h2{
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+    .LowerSec p{
+        width: 95%;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    .ScoreBoard{
+        gap:10px;
+        padding: 30px 70px;
+        margin-bottom: 30px;
+    }
+    
+    .ScoreBoard h1{
+        line-height: 5rem;
+    }
+    
+    
+    
+    .btnGroup{
+        gap: 10px;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+    .BtnLearnMore{
+        font-size: 1rem;
+    }
+    
+    .BtnReatake{
+        font-size: 1rem;
+    }
+    
+    
+}
+
+

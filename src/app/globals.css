@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;800;900&family=Source+Sans+3:wght@300;400;500&display=swap');
+
+*{
+  margin:0;
+  padding: 0;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Raleway', sans-serif !important;
+  animation: fadeInAnimation 1s ease-in-out;
+}
+
+  
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+p{
+  font-family: 'Source Sans 3', sans-serif !important;
+}
+
+
+
+.MainSectionAdmin{
+  background-color:#1848a0 ;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.EmailBody{
+  margin-top: 50px;
+  height: 100%;
+}
+.EmailBody table{
+  padding: 10px 20px;
+  width: 80%;
+  border-radius: 10px;
+  background-color: white;
+  height: 100%;
+  margin: auto;
+}
+
+.EmailBody table thead{
+  background-color: #1848a0;
+  color: white;
+  padding: 10px 5px;
+}
+
+.EmailBody table thead tr th{
+  font-size: 1.5rem;
+  padding: 10px 5px;
+} 
+
+.EmailBody tbody{
+  background-color: #0881fe;
+  color: white;
+}
+
+.EmailBody tbody tr td{
+  padding: 5px 20px;
+  font-size: 1rem;
+}
+
+
+@media screen and (max-width:650px) {
+  .EmailBody{
+    margin-top: 20px;
+  }
+  .EmailBody table{
+    padding: 10px 10px;
+    width: 95%;
+  }
+  
+  .EmailBody table thead{
+    background-color: #1848a0;
+    color: white;
+    padding: 5px 5px;
+  }
+  
+  .EmailBody table thead tr th{
+    font-size: 1rem;
+    padding: 10px 5px;
+  } 
+  
+  
+  .EmailBody tbody tr td{
+    padding: 5px 10px;
+    font-size: 0.9rem;
+  }
+}
+
+
+
+.LegalHead{
+  background-color: #1848a0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 60px 0px;
+}
+
+.LegalHead h1{
+  font-size: 3rem;
+}
+.LegalHead h4{
+  font-weight: 400;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.DataSetSection{
+  width: 60%;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.DataSetSection ol{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.DataSetSection .DataIn{
+  font-size: 1.2rem;
+  color: rgb(62, 62, 62);
+}
+
+.DataSetSection ul{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media screen and (max-width:850px) {
+    
+  .DataSetSection{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width:650px) {
+  .LegalHead{
+    padding: 40px 0px;
+  }
+  
+  .LegalHead h1{
+    font-size: 2rem;
+  }
+  .LegalHead h4{
+    font-weight: 400;
+    font-size: 0.8rem;
+  }
+  
+  .DataSetSection{
+    width: 80%;
+  }
+  
+  
+  .DataSetSection .DataIn{
+    font-size: 1rem;
+  }
+}
