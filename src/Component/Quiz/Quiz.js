@@ -185,60 +185,60 @@ const Quiz = () => {
 
   return (
     <>
-    <div className='MainHead'>
-      <div className="InnerSection">
-        <div className="QuizSection">
-          <div className="QuestionSection">
-            <h4>Question {currentQuestionIndex + 1}</h4>
-            <h1>{questionsData[currentQuestionIndex].question}</h1>
-            <h3><FaClock /> {timer}s</h3>
-          </div>
-          <div className="OptionSection">
-            <ul>
-              {questionsData[currentQuestionIndex].options.map((option) => (
-                <li
-                  key={option.Option}
-                  onClick={() => handleOptionSelect(option.Option)}
-                  style={{
-                    cursor: answerSelected ? 'not-allowed' : 'pointer',
-                    backgroundColor:
-                      isAnswerCorrect !== null
-                        ? option.Option === userAnswers[currentQuestionIndex]
-                          ? isAnswerCorrect
-                            ? '#208c71'
-                            : '#e35f5f'
-                          : option.Option === correctAnswer
-                            ? '#208c71'
-                            : 'inherit'
-                        : '',
+      <div className='MainHead'>
+        <div className="InnerSection">
+          <div className="QuizSection">
+            <div className="QuestionSection">
+              <h4>Question {currentQuestionIndex + 1}</h4>
+              <h1>{questionsData[currentQuestionIndex].question}</h1>
+              <h3><FaClock /> {timer}s</h3>
+            </div>
+            <div className="OptionSection">
+              <ul>
+                {questionsData[currentQuestionIndex].options.map((option) => (
+                  <li
+                    key={option.Option}
+                    onClick={() => handleOptionSelect(option.Option)}
+                    style={{
+                      cursor: answerSelected ? 'not-allowed' : 'pointer',
+                      backgroundColor:
+                        isAnswerCorrect !== null
+                          ? option.Option === userAnswers[currentQuestionIndex]
+                            ? isAnswerCorrect
+                              ? '#208c71'
+                              : '#e35f5f'
+                            : option.Option === correctAnswer
+                              ? '#208c71'
+                              : 'inherit'
+                          : '',
                       borderColor:
-                      isAnswerCorrect !== null
-                        ? option.Option === userAnswers[currentQuestionIndex]
-                          ? isAnswerCorrect
-                            ? '#208c71'
-                            : '#e35f5f'
-                          : option.Option === correctAnswer
-                            ? '#208c71'
-                            : 'inherit'
-                        : '',
-                  }}
-                >
-                  {option.Value}
-                </li>
-              ))}
-            </ul>
+                        isAnswerCorrect !== null
+                          ? option.Option === userAnswers[currentQuestionIndex]
+                            ? isAnswerCorrect
+                              ? '#208c71'
+                              : '#e35f5f'
+                            : option.Option === correctAnswer
+                              ? '#208c71'
+                              : 'inherit'
+                          : '',
+                    }}
+                  >
+                    {option.Value}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            {(!showTimeout && isAnswerCorrect !== null) && (
+              <button className="NextButton" onClick={handleNextButtonClick}>
+                Next
+              </button>
+            )}
           </div>
-          {(!showTimeout && isAnswerCorrect !== null) && (
-            <button className="NextButton" onClick={handleNextButtonClick}>
-              Next
-            </button>
-          )}
-        </div>
-        <div className="Model">
-          <img src={imageSrc} alt="" />
+          <div className="Model">
+            <img src={imageSrc} alt="" />
+          </div>
         </div>
       </div>
-    </div>
     </>
   );
 };

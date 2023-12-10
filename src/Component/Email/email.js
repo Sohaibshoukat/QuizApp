@@ -78,37 +78,27 @@ const Email = () => {
         <>
 
             <div className="Data">
-                <TextField id="outlined-basic" 
-                    className='input' 
-                    style={{color:"white"}}
-                    label="Enter Your Name" 
-                    variant="outlined"
-                    value={Name}
-                    onChange={(e) => { setName(e.target.value) }} />
-                {/* <input
+                <input
                     type="text"
                     id='Name'
                     placeholder='Enter Your Name'
                     value={Name}
                     onChange={(e) => { setName(e.target.value) }}
-                /> */}
+                />
                 {ErrorName && <h4><MdErrorOutline /> {ErrorMessage}</h4>}
-                <TextField id="outlined-basic" className='input' label="Enter Your Email" variant="outlined"
-                    value={Email}
-                    onChange={(e) => { setEmail(e.target.value) }} />
-                {/* <input
+                <input
                     type="email"
                     id='email'
-                    placeholder='l'
+                    placeholder='Enter Your Email'
                     value={Email}
                     onChange={(e) => { setEmail(e.target.value) }}
-                /> */}
+                />
                 {Error && <h4><MdErrorOutline /> {ErrorMessage}</h4>}
-            </div>
-            <div className='Link'>
-                <button className="NextButton" onClick={SubmitEmail} disable={Submitting} style={{ opacity: Submitting && 0.5 }}>
-                    Lets Begin
-                </button>
+                <div className='Link'>
+                    <button className="NextButton" onClick={SubmitEmail} disable={Submitting} style={{ opacity: Submitting && 0.5 }}>
+                        Lets Begin
+                    </button>
+                </div>
             </div>
         </>
     )

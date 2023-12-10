@@ -1,6 +1,6 @@
 .Data{
     margin-top: 10px;
-    width: 40%;
+    width: 30%;
     padding: 20px 0px;
     border-radius: 24px;
     display: flex;
@@ -11,39 +11,30 @@
 }
 
 
-.Data .input{
-    width: 100% !important;
-    min-width: 30% !important;
-    /* padding: 10px 0px 10px 10px; */
-    font-size: 1.5rem !important; 
-    border: none !important;
-    border-radius: 5px !important;
-    font-weight:500 !important;
+.Data input{
+    width: 100% ;
+    min-width: 30% ;
+    padding: 10px 0px 10px 10px;
+    font-size: 1.2rem ; 
+    border: none ;
+    border-radius: 5px ;
+    font-weight:500 ;
+    transition: 0.3s ease-in-out;
 }
 
-
-.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root{
-    color: black !important;
+input:focus{
+    transition: 0.3s ease-in-out;
+    border: none;
+    box-shadow: rgba(16, 170, 47, 0.3) 0px 19px 38px, rgba(16, 170, 47, 0.22) 0px 15px 12px;
 }
 
-.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input{
-    color: black !important;
-    background-color: white;
-
+.Link{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
 }
 
-.css-1d3z3hw-MuiOutlinedInput-notchedOutline{
-    border-color: white !important;
-}
-
-.css-14lo706>span{
-    color: green !important;
-}
-
-.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused{
-    color: green !important;
-    font-weight: 700;
-}
 
 .NextButton{
     justify-self: flex-end;
@@ -51,11 +42,11 @@
     background-color: white;
     color: black;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 5px;
     font-weight: 700;
     font-family: 'Raleway', sans-serif !important;
     font-size: 1.2rem;
-    padding: 10px 40px;
+    padding: 10px 20px;
     border: 1px solid rgba(0,0,0,0);
     box-shadow: 0 2px 0 rgba(0,0,0,.015);
     transition: 0.5s ease-in-out;
@@ -89,14 +80,14 @@
         font-size: 1.2rem;
     }
     
-    .Data .input{
+    .Data input{
         font-size: 1rem;
     }
     
     
     .NextButton{
         justify-self: flex-end;
-        margin-top: 20px;
+        margin-top: 0px;
         font-size: 1.2rem;
         padding: 10px 20px;
     
@@ -120,7 +111,7 @@
         font-size: 1rem;
     }
     
-    .Data .input{
+    .Data input{
         font-size: 1rem;
     }
     

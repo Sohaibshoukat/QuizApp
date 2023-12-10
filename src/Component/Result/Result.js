@@ -51,8 +51,8 @@ const Result = () => {
           <div className="LowerSec">
             <h2>Congratulations and Thank You for Taking the Super Agent Quiz!</h2>
             <p>We understand that success is the cornerstone of our industry and we're here to support you every step by the way</p>
-            <p>If you have any question, need further assitence, or simply want to connect with our community of like-minded professionals, don't hesitate to reach out</p>
-            <p style={{marginTop:"20px"}}>Than you for being of our caring omunity</p>
+            <p>If you have any question, need further assitance, or simply want to connect with our community of like-minded professionals, don't hesitate to reach out</p>
+            <p style={{marginTop:"20px"}}>Than you for being of our caring community</p>
             {/* <div className="btnGroup">
               <a href="https://www.mybenefitsguardian.com/" target='_blank'>
                 <button className='BtnLearnMore'>Learn More</button>

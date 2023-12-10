@@ -15,18 +15,29 @@
     justify-content: center;
     align-items: flex-end;
     height: 100%;
-    text-align: left;
+    text-align: right;
     color: white;
     width: 100%;
 }
+
 .InnerText{
-    width: 60%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 55%;
     margin-right: 3%;
 }
 
 .HeadText h1 {
-    width: fit-content;
-    font-size: 3rem;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.HeadText h2 {
+    margin-top: 10px;
+    font-size: 2.2rem;
     font-weight: 600;
 }
 
@@ -82,15 +93,24 @@
     will-change: transform;
 }
 
+
 @media screen and (max-width:1100px) {
     .Head {
         background-image: url("../../../public/assets/BGTablet.gif");
     }
 
-    
+    .InnerText{
+        width: 50%;
+        margin-right: 3%;
+    }
     
     .HeadText h1 {
         font-size: 2.5rem;
+    }
+
+    .HeadText h2 {
+        margin-top: 10px;
+        font-size: 1.5rem;
     }
     
     .HeadText p {
@@ -114,12 +134,19 @@
         text-align: center;
     }
     .InnerText{
+    text-align: center;
+
+        align-items: center;
         margin: auto;
         margin-top: 5%;
         width: 90%;
     }  
     .HeadText h1 {
         font-size: 2.3rem;
+    }
+
+    .HeadText h2 {
+        font-size: 1.8rem;
     }
     
     .HeadText p {
@@ -144,7 +171,12 @@
     }  
     
     .HeadText h1 {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
+        width: 100%;
+    }
+
+    .HeadText h2 {
+        font-size: 1.1rem;
         width: 100%;
     }
     
